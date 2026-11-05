@@ -539,7 +539,7 @@ export const VerificationDropzoneWidget: React.FC<VerificationDropzoneWidgetProp
         )}
       </div>
 
-      {/* Швидкі демо-пресети для перевірки викладачем */}
+      {/* Демонстраційні зразки для швидкого тестування */}
       <div className="p-5 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">

@@ -44,11 +44,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                   Photo Verifier
                 </span>
                 <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-brand-100 dark:bg-brand-950/80 text-brand-700 dark:text-brand-300 border border-brand-300 dark:border-brand-800">
-                  STEM
+                  v1.0
                 </span>
               </div>
               <p className="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">
-                Верифікація автентичності зображень та AI-детекція | Кафедра ПСТ КНУ
+                Верифікація автентичності зображень та AI-детекція
               </p>
             </div>
           </div>
@@ -92,8 +92,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                 ГК
               </div>
               <div className="text-left text-xs">
-                <div className="font-semibold text-slate-800 dark:text-slate-200">Гість (Студент)</div>
-                <div className="text-slate-400">Гостьовий сеанс</div>
+                <div className="font-semibold text-slate-800 dark:text-slate-200">Гість</div>
+                <div className="text-slate-400">Локальний сеанс</div>
               </div>
             </div>
           </div>

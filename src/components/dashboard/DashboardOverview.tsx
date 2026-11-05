@@ -42,7 +42,7 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
         <div className="space-y-2">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-500/20 text-brand-300 text-xs font-semibold border border-brand-500/30">
             <Sparkles className="w-3.5 h-3.5 text-brand-400" />
-            <span>STEM-проєкт: Фронтенд криміналістичної системи</span>
+            <span>Digital Forensics • Web Platform</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">

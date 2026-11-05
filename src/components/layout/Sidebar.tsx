@@ -34,7 +34,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'analysis', label: 'Робоча зона ELA', icon: SlidersHorizontal, badge: hasResult ? 'Готово' : null, disabled: !hasResult },
     { id: 'report', label: 'Звіт та EXIF', icon: FileText, badge: hasResult ? 'PDF' : null, disabled: !hasResult },
     { id: 'history', label: 'Історія перевірок', icon: History, badge: historyCount > 0 ? String(historyCount) : null },
-    { id: 'about', label: 'Про STEM-проєкт', icon: Info, badge: null },
+    { id: 'about', label: 'Про систему', icon: Info, badge: null },
   ];
 
   const handleSelect = (tabId: string) => {
@@ -118,11 +118,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </div>
         </div>
 
-        {/* Інформація про курс та автора */}
+        {/* Інформація про систему */}
         <div className="pt-4 border-t border-slate-200 dark:border-slate-800 text-[11px] text-slate-500 dark:text-slate-400 space-y-1">
-          <div className="font-semibold text-slate-700 dark:text-slate-300">ОК «Розробник фронтенду»</div>
-          <div>КНУ ім. Т. Шевченка • ФКНК</div>
-          <div className="text-slate-400">Версія: 1.0.0-STEM</div>
+          <div className="font-semibold text-slate-700 dark:text-slate-300">Photo Verifier Platform</div>
+          <div>Digital Forensics & AI Detection</div>
+          <div className="text-slate-400">Версія: 1.0.0</div>
         </div>
       </aside>
     </>

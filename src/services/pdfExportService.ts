@@ -201,10 +201,10 @@ export class PdfExportService {
 
     ctx.fillStyle = '#0f172a';
     ctx.font = 'bold 18px "Segoe UI", Arial, sans-serif';
-    ctx.fillText('Звіт згенеровано програмним комплексом Photo Verifier (STEM-проєкт)', 80, y + 40);
+    ctx.fillText('Звіт згенеровано аналітичною платформою Photo Verifier', 80, y + 40);
     ctx.font = '16px "Segoe UI", Arial, sans-serif';
     ctx.fillStyle = '#64748b';
-    ctx.fillText('Кафедра програмних систем і технологій ФКНК КНУ ім. Тараса Шевченка', 80, y + 70);
+    ctx.fillText('Модуль цифрової криміналістики та виявлення модифікацій зображень', 80, y + 70);
     ctx.fillText('Документ містить криптографічний хеш і захищений від фальсифікації.', 80, y + 95);
 
     // Печатка експертизи
@@ -223,7 +223,7 @@ export class PdfExportService {
     ctx.font = 'bold 18px "Segoe UI", Arial, sans-serif';
     ctx.fillText('VERIFIED', 0, 5);
     ctx.font = '12px "Segoe UI", Arial, sans-serif';
-    ctx.fillText('KNU PST 2026', 0, 30);
+    ctx.fillText('SECURE LAB', 0, 30);
     ctx.restore();
 
     // 8. Конвертація Canvas у PDF через jsPDF

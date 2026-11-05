@@ -95,7 +95,7 @@ export interface HistoryRecord {
   fileSizeFormatted: string;
 }
 
-// Попередньо завантажені демо-зразки для швидкого тестування викладачем
+// Попередньо завантажені демо-зразки для швидкого тестування функціоналу
 export interface DemoPreset {
   id: string;
   name: string;
