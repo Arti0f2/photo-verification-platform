@@ -218,10 +218,10 @@ export const VerificationDropzoneWidget: React.FC<VerificationDropzoneWidgetProp
   const loadPreset = async (preset: DemoPreset) => {
     setState('Validating');
     try {
-      // Конвертуємо SVG DataURL у File об'єкт
+      // Конвертуємо DataURL у File об'єкт із точною назвою та MIME типом
       const res = await fetch(preset.imageUrl);
       const blob = await res.blob();
-      const file = new File([blob], `${preset.id}.jpg`, { type: 'image/jpeg' });
+      const file = new File([blob], preset.fileName, { type: preset.fileType });
       await validateAndProcessFile(file);
     } catch (e) {
       console.error('Помилка завантаження пресету:', e);

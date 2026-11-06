@@ -99,6 +99,8 @@ export interface HistoryRecord {
 export interface DemoPreset {
   id: string;
   name: string;
+  fileName: string;
+  fileType: string;
   description: string;
   tag: 'camera' | 'photoshop' | 'ai';
   imageUrl: string;

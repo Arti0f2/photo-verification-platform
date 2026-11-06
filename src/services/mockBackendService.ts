@@ -106,13 +106,18 @@ export class MockBackendService {
     let manipProb = 10;
 
     // Аналіз імені файлу на натяки
-    if (fn.includes('midjourney') || fn.includes('flux') || fn.includes('dalle') || fn.includes('ai') || fn.includes('synthetic')) {
-      aiProb += 55;
+    if (fn.includes('midjourney') || fn.includes('flux') || fn.includes('dalle') || fn.includes('ai') || fn.includes('synthetic') || fn.includes('сгенеровано') || fn.includes('згенеровано')) {
+      aiProb += 60;
       suspiciousFactors.push('Назва або сигнатура файлу містить позначення моделі ШІ');
     }
-    if (fn.includes('photoshop') || fn.includes('edit') || fn.includes('manip') || fn.includes('crop')) {
-      manipProb += 50;
-      suspiciousFactors.push('Назва файлу вказує на обробку у графічному редакторі');
+    if (fn.includes('photoshop') || fn.includes('edit') || fn.includes('manip') || fn.includes('crop') || fn.includes('склеюван') || fn.includes('монтаж')) {
+      manipProb += 60;
+      suspiciousFactors.push('Назва або структура файлу вказує на обробку у графічному редакторі / сліди склеювання');
+    }
+    if (fn.includes('соні') || fn.includes('sony') || (fn.includes('оригінал') && !fn.includes('склеюван') && !fn.includes('сгенеровано'))) {
+      safeFactors.push('Підтверджена автентична структура фізичного сенсора SONY');
+      aiProb = Math.min(aiProb, 5);
+      manipProb = Math.min(manipProb, 5);
     }
 
     // Аналіз EXIF
